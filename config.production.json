@@ -1,0 +1,25 @@
+{
+    "database": {
+        "client": "sqlite3",
+        "connection": {
+            "filename": "content/data/ghost.db"
+        },
+        "debug": false
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "caching": {
+      "frontend": {
+        "maxAge": 600
+      }
+    },
+    "storage": {
+      "active": "ghost-storage-azure",
+      "ghost-storage-azure": {
+        "useHttps" : "true", 
+        "cacheControl" : "2592000",
+        "useDatedFolder" : true
+       }
+    }
+}
